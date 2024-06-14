@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <section class="history">
+        <button class="history_button" onclick="toggleHistory()"> History </button>
+    </section>
+
+    <div class="sidebar" id="historySidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleHistory()">Close</a>
+        <div id="historyContent">
+            <h2>History</h2>
+            <ul id="historyList">
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="calc">
+        <section class="screen">
+            0
+        </section>
+
+        <section class="calc_buttons">
+            
+            <div class="calc_row">
+                <button class="calc_button num"> 7 </button>
+                <button class="calc_button num"> 8 </button>
+                <button class="calc_button num"> 9 </button>
+                <button class="calc_button op"> &leftarrow; </button>
+                <button class="calc_button op"> AC </button>
+            </div>
+            <div class="calc_row">
+                <button class="calc_button num"> 4 </button>
+                <button class="calc_button num"> 5 </button>
+                <button class="calc_button num"> 6 </button>
+                <button class="calc_button op"> &times; </button>
+                <button class="calc_button op"> &div; </button>
+            </div>
+            <div class="calc_row">
+                <button class="calc_button num"> 1 </button>
+                <button class="calc_button num"> 2 </button>
+                <button class="calc_button num"> 3 </button>
+                <button class="calc_button op"> &plus; </button>
+                <button class="calc_button op"> &minus; </button>
+            </div>
+            <div class="calc_row">
+                <button class="calc_button num"> 0 </button>
+                <button class="calc_button num"> . </button>
+                <button class="calc_button op"> % </button>
+                <button class="calc_button op equal"> &equals; </button>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="calc.js"></script>
+</body>
+</html>
